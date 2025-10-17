@@ -56,9 +56,12 @@
                             <label for="fullname">Full Name</label>
                             <input required name="fullname" id="fullname" type="text" placeholder="Enter Your Fullname"
                                 class="mb-3 form-control">
+                                <span id="efullname"></span>
 
                             <label for="dob">Date Of Birth</label>
                             <input type="date" name="dob" id="dob" class="mb-3 form-control" required>
+                            <span id="edob"></span>
+
                             <label for="gender">Gender</label>
                             <select required name="gender" id="gender" class="form-control mb-3">
                                 <option value="">Select Gender</option>
@@ -66,10 +69,11 @@
                                 <option value="female">Female</option>
                                 <option value="other">Other</option>
                             </select>
+                            
 
                             <label for="htown">Home Town</label>
                             <select name="htown" id="htown" class="mb-3 form-control" required>
-                                <option>Select Your City</option>
+                                <option value="">Select Your City</option>
                                 <option value="Dhaka">Dhaka</option>
                                 <option value="Rajshahi">Rajshahi</option>
                                 <option value="Chittagong">Chittagong</option>
@@ -79,22 +83,33 @@
                                 <option value="Rangpur">Rangpur</option>
                                 <option value="Mymesingh">Mymesingh</option>
                             </select>
+                            
+                          
 
                             <label for="mobile">Phone No</label>
                             <input required name="mobile" id="mobile" type="text" placeholder="Mobile No" class="mb-3 form-control">
-                            
+                            <span id="emobile"></span>
+
                             <label for="email">Email</label>
                             <input required name="email" id="email" type="email" placeholder="Enter Email" class="mb-3 form-control">
-                           
+                           <span id="eemail"></span>
+
                             <label for="password">Password</label>
                             <input required name="password" id="password" type="password" placeholder="Password"
                                 class="mb-3 form-control">
+                                <span id="epassword"></span>
+                                <span id="passwordsmall"></span>
+                                <span id="passwordcapital"></span>
+                                <span id="passwordnumber"></span>
+                                <span id="passwordspecial"></span>
+                                <span id="passwordstrength"></span>
 
-                                <label for="confirm-password">Confirm Password</label>
-                            <input required name="confirm-password" id="confirm-password" type="password" placeholder="Confirm Password"
-                                class="mb-3 form-control">
+                                <label for="confirmpassword">Confirm Password</label>
+                            <input  name="confirmpassword" id="confirmpassword" type="password" placeholder="Confirm Password"
+                                class="mb-3 form-control" required>
+                                <span id="econfirmpassword"></span>
                                 <br>
-                            <button type="submit" class="btn btn-primary w-100">Register</button>
+                            <button type="submit" class="btn btn-primary w-100" name="regbtn" id="regbtn" disabled>Register</button>
                         </form>
                     </div>
 
