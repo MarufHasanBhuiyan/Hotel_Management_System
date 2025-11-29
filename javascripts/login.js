@@ -16,6 +16,7 @@ document.getElementById("fullname").addEventListener("input", () => {
     for (let i = 0; i < fullname.length; i++) {
         if ((fullname[i] >= 'a' && fullname[i] <= 'z') ||
             (fullname[i] >= 'A' && fullname[i] <= 'Z') ||
+            (fullname[i] == ' ') ||
             (fullname[i] >= '0' && fullname[i] <= '9')) {
             x = 0;
 
